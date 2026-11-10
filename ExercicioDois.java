@@ -2,14 +2,16 @@ import java.util.Scanner;
 
 public class ExercicioDois {
     static Scanner sc = new Scanner(System.in);
-public static void main(String[] args) {
-}
+
+    public static void main(String[] args) {
+    }
+
     public static void ex1() {
         //Orçamento Familiar
-                    double ganhos = sc.nextInt();
-                    double gastos = sc.nextInt();
+    double ganhos = sc.nextInt();
+      double gastos = sc.nextInt();
         
-                    if (ganhos >= gastos) {
+    if (ganhos >= gastos) {
         
                           System.out.printf("Você está dentro do orçamento!", ganhos);
                     } else {
@@ -17,8 +19,8 @@ public static void main(String[] args) {
         
                     }
               }
-        
-              public static void ex2() {
+
+          public static void ex2() {
                     // Semáforo
         
                     String cor = sc.nextLine();
@@ -31,8 +33,8 @@ public static void main(String[] args) {
                           System.out.println("Farol inoperante ");
                     }
               }
-        
-              public static void ex3() {
+
+          public static void ex3() {
         //Dia por Extenso
         
                     int dia = sc.nextInt();
@@ -54,8 +56,8 @@ public static void main(String[] args) {
                     } else
                           System.out.println("Dia da semana inválido");
               }
-        
-              public static void ex4() {
+
+          public static void ex4() {
                     // Sorveteria em Promoção
         
                     double grama = sc.nextDouble();
@@ -70,8 +72,8 @@ public static void main(String[] args) {
                           System.out.printf("O total é R$ %.2f%n", total);
                     }
               }
-        
-              public static void ex5() {
+
+          public static void ex5() {
                     // Boletim Aluno
         
                     double nota1 = sc.nextDouble();
@@ -104,8 +106,8 @@ public static void main(String[] args) {
         
                     }
               }
-        
-              public static void ex6() {
+
+          public static void ex6() {
                     // Qual é a cor?
         
                     String cor1 = sc.nextLine();
@@ -119,8 +121,8 @@ public static void main(String[] args) {
                     } else
                           System.out.println("Apenas cores primárias são aceitas.");
               }
-        
-              public static void ex7() {
+
+          public static void ex7() {
                     // Nota de Corte
         
                     double notaCand = sc.nextDouble();
@@ -137,101 +139,102 @@ public static void main(String[] args) {
                           System.out.printf("Situação candidato:%nLista de Espera");
                     }
               }
+
+    public static void ex8() {
+     // Calculadora com Menu
         
-              public static void ex8() {
-                    // Calculadora com Menu
+    double num1 = sc.nextInt();
+    double num2 = sc.nextInt();
+    String operacao = sc.next();
         
-                    double num1 = sc.nextInt();
-                    double num2 = sc.nextInt();
-                    String operacao = sc.next();
+    if (operacao.equals("1") || operacao.equals("soma")) {
+    System.out.printf("%.1f + %.1f = %.1f%n", num1, num2, num1 + num2);
         
-                    if (operacao.equals("1") || operacao.equals("soma")) {
-                          System.out.printf("%.1f + %.1f = %.1f%n", num1, num2, num1 + num2);
+    } else if (operacao.equals("2") || operacao.equals("subtração")) {
+    System.out.printf("%.1f - %.1f = %.1f%n", num1, num2, num1 - num2);
         
-                    } else if (operacao.equals("2") || operacao.equals("subtração")) {
-                          System.out.printf("%.1f - %.1f = %.1f%n", num1, num2, num1 - num2);
+    } else if (operacao.equals("3") || operacao.equals("multiplicação")) {
+    System.out.printf("%.1f * %.1f = %.1f%n", num1, num2, num1 * num2);
         
-                    } else if (operacao.equals("3") || operacao.equals("multiplicação")) {
-                          System.out.printf("%.1f * %.1f = %.1f%n", num1, num2, num1 * num2);
+    } else if (operacao.equals("4") || operacao.equals("divisão")) {
+    System.out.printf("%.1f / %.1f = %.1f%n", num1, num2, num1 / num2);
         
-                    } else if (operacao.equals("4") || operacao.equals("divisão")) {
-                          System.out.printf("%.1f / %.1f = %.1f%n", num1, num2, num1 / num2);
+    } else if (operacao.equals("5") || operacao.equals("resto")) {
+    System.out.printf("%.1f mod %.1f = %.1f%n", num1, num2, num1 % num2);
         
-                    } else if (operacao.equals("5") || operacao.equals("resto")) {
-                          System.out.printf("%.1f mod %.1f = %.1f%n", num1, num2, num1 % num2);
+    } else if (operacao.equals("6") || operacao.equals("potência")) {
+    System.out.printf("%.1f ^ %.1f = %.1f%n", num1, num2, Math.pow(num1, num2));
         
-                    } else if (operacao.equals("6") || operacao.equals("potência")) {
-                          System.out.printf("%.1f ^ %.1f = %.1f%n", num1, num2, Math.pow(num1, num2));
-        
-                    } else {
-                          System.out.println("Operação não suportada");
-                    }
-              }
-        
-              public static void ex9() {
+    } else {
+    System.out.println("Operação não suportada");
+
+    }
+  }
+
+    public static void ex9() {
         // Mensalidade Universidade
         
-                    String curso = sc.nextLine();
-                    String isento = sc.nextLine();
-                    double desconto = sc.nextDouble();
+    String curso = sc.nextLine();
+    String isento = sc.nextLine();
+    double desconto = sc.nextDouble();
         
-                    double valorBase = 0;
+    double valorBase = 0;
         
-                    if (curso.equalsIgnoreCase("SI")) {
-                          valorBase = 900.00;
+    if (curso.equalsIgnoreCase("SI")) {
+    valorBase = 900.00;
         
-                    } else if (curso.equalsIgnoreCase("ADS")) {
-                          valorBase = 750.00;
+    } else if (curso.equalsIgnoreCase("ADS")) {
+    valorBase = 750.00;
         
-                    } else if (curso.equalsIgnoreCase("CS")) {
-                          valorBase = 1150.00;
+    } else if (curso.equalsIgnoreCase("CS")) {
+    valorBase = 1150.00;
         
-                    } else if (curso.equalsIgnoreCase("EC")) {
-                          valorBase = 1300.00;
+    } else if (curso.equalsIgnoreCase("EC")) {
+    valorBase = 1300.00;
         
-                    } else if (curso.equalsIgnoreCase("ES")) {
-                          valorBase = 950.00;
+    } else if (curso.equalsIgnoreCase("ES")) {
+    valorBase = 950.00;
         
-                    } else {
-                          System.out.println("Curso não encontrado");
-                    }
+    } else {
+    System.out.println("Curso não encontrado");
+}
         
-                    double valorFinal;
+    double valorFinal;
         
-                    if (isento.equalsIgnoreCase("Sim")) {
-                          valorFinal = 0;
+    if (isento.equalsIgnoreCase("Sim")) {
+    valorFinal = 0;
         
-                    } else {
-                          valorFinal = valorBase * (1 - (desconto / 100));
-                    }
-                    System.out.printf("Valor da mensalidade:%nR$ %.2f%n", valorFinal);
+    } else {
+    valorFinal = valorBase * (1 - (desconto / 100));
+    }
+    System.out.printf("Valor da mensalidade:%nR$ %.2f%n", valorFinal);
               }
-        
-              public static void ex10() {
+
+    public static void ex10() {
         // Ingressos para o Cinema
         
-                    double inteira = sc.nextDouble();
-                    double meia = sc.nextDouble();
-                    sc.next();
-                    
-                    String dia = sc.nextLine();
-                    String nacional = sc.nextLine();
+    double inteira = sc.nextDouble();
+    double meia = sc.nextDouble();
+    sc.next();
+
+    String dia = sc.nextLine();
+    String nacional = sc.nextLine();
         
-                    double total = 0;
+    double total = 0;
         
-                    double ingresso = inteira + meia;
+    double ingresso = inteira + meia;
         
-                    if (nacional.equalsIgnoreCase("Sim")) {
-                          total = ingresso * 5;
+    if (nacional.equalsIgnoreCase("Sim")) {
+    total = ingresso * 5;
         
-                    } else if (dia.equalsIgnoreCase("Quarta-feira") || dia.equalsIgnoreCase("Quarta")) {
-                          total = ingresso * 14.50;
+        } else if (dia.equalsIgnoreCase("Quarta-feira") || dia.equalsIgnoreCase("Quarta")) {
+    total = ingresso * 14.50;
         
-                    } else {
-                          total = (inteira * 28.50) + (meia * 14.25);
-                    }
+        } else {
+    total = (inteira * 28.50) + (meia * 14.25);
+    }
         
-                    System.out.printf("Total à pagar:%nR$ %.2f%n", total);
+    System.out.printf("Total à pagar:%nR$ %.2f%n", total);
         
               
         
